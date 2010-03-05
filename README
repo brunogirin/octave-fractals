@@ -1,0 +1,43 @@
+Copyright 2008--2010 Bruno Girin, brunogirin@gmail.com
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+=====================================================================
+
+I originally created this set of Octave scripts out of curiosity about
+fractals and in particular the Mandelbrot and Julia sets. I then decided
+to talk about it and share the code and some sample images on my weblog,
+at http://brunogirin.blogspot.com/
+The functions and script presented here are the ones I used to
+produce the images.
+
+INSTALLATION
+
+You will need to have Octave installed to run this code. In order to do
+so, on Ubuntu or any other Debian derivative, open a terminal window and
+run the following:
+
+sudo apt-get install octave
+
+USAGE
+
+Using this code is extremely simple. Extract all the files in a single
+directory, change directory to where they were extracted and just run
+the main script using octave:
+
+octave fractaldemo.m
+
+This will produce a set of .ppm files that have been numbered according
+to the order in which they appeared on the blog.
+
