@@ -41,3 +41,5 @@ octave fractaldemo.m
 This will produce a set of .ppm files that have been numbered according
 to the order in which they appeared on the blog.
 
+You can then convert the .ppm files into .png or other with ImageMagick.
+
