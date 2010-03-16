@@ -17,6 +17,9 @@
 % gradient function
 % Generate a linear gradient from colour c1 to colour c2 with
 % n colours in total
+% Each colour should be specified as a triplet of numbers between
+% 0 and 1 as in this example:
+% gradient([0,0.8,1],[1,1,1],16)
 %
 function g=gradient(c1, c2, n)
   g=[];
