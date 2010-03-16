@@ -6,7 +6,7 @@ body {
 }
 #container {
   margin: 0 auto;
-  width: 700px;
+  width: 70%;
 }
 h1 { font-size: 2.5em; margin-bottom: 3px; }
 h1 a { text-decoration: none }
@@ -14,7 +14,24 @@ h2 { font-size: 2.0em; }
 h3 { font-size: 1.5em; }
 .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
 .download { float: right; }
-pre { background: #000; color: #fff; padding: 15px;}
+pre {
+  background: #eee;
+  color: black;
+  border-top: 1px dashed #6699cc;
+  border-bottom: 1px dashed #6699cc;
+  padding: 0.5em 0.25em;
+}
+div.figure {
+  margin: .5em auto;
+  text-align: center;
+}
+div.figure img {
+  padding: 5px;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
 hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
 .footer { text-align:center; padding-top:30px; font-style: italic; }
 

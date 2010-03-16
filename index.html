@@ -20,32 +20,68 @@
     </div>
 
     <h1><a href="http://github.com/brunogirin/octave-fractals">octave-fractals</a>
-      by <a href="http://github.com/brunogirin">brunogirin</a> (under construction)</h1>
+      by <a href="http://github.com/brunogirin">brunogirin</a></h1>
 
     <div class="description">
       Simple scripts to generate Mandelbrot and Julia fractals with Octave.
     </div>
 
+    <h2>The Project</h2>
+
     <p>I originally created this set of Octave scripts out of curiosity about
     fractals and in particular the Mandelbrot and Julia sets. I then decided
     to talk about it and share the code and some sample images on
     <a href="http://brunogirin.blogspot.com/">my weblog</a>. The functions
-    and scripts presented here are the ones I used to produce the images.</p>
+    and scripts presented here are the ones I used to produce the images.
+    They were designed to be generic enough and you should be able to
+    produce any Mandelbrot or Julia set image, to any size you want (within
+    the limits of your computer's processor and memory of course).</p>
 
-    <h2>Dependencies</h2>
-    <ul><li><a href="http://www.gnu.org/software/octave/">octave</a></li></ul>
+    <p>Here are a few examples taken out of the articles:</p>
 
-    <h2>Install</h2>
-    <p>You will need to have Octave installed to run this code. In order to
-    do so, on Ubuntu or any other Debian derivative, open a terminal window
-    and run the following:</p>
+    <div class=figure><img src="./f1.2-julia-classic-c_0.75+0.2i.png" /></div>
+    <div class=figure><img src="./f3.7-mandelbrot-poly.png" /></div>
+    <div class=figure><img src="./f4.2-julia-sin-c_1+0.5i.png" /></div>
+    <div class=figure><img src="./f6.2-mandelbrot-original-zoom-x10.png" /></div>
+
+    <h2>Installation Instructions</h2>
+
+    <h3>Dependencies</h3>
+    <p>The scripts in the project are designed to be run with
+    <a href="http://www.gnu.org/software/octave/">octave</a></li>. You will
+    therefore need to install octave first. Here is how to do it on
+    Unbuntu:</p>
+
     <pre>$ sudo apt-get install octave</pre>
-    <p>Once octave is installed, just unzip the file in any directory and
-    run the demo script from that directory:</p>
-    <pre>octave fractaldemo.m</pre>
+
+    <p>If you are using a different operating system, please follow the
+    instructions on the <a href="http://www.gnu.org/software/octave/">octave</a>
+    web site.</p>
+
+    <p>It may also be useful to install <a href="http://www.imagemagick.org/">ImageMagick</a>
+    in order to be able to transform ppm images into another format.
+    Here is how to do it on Ubuntu:</p>
+
+    <pre>$ sudo apt-get install imagemagick</pre>
+
+    <h3>The octave-fractals scripts</h3>
+    <p>Download the zip or tar archive and extract it in any directory. And
+    that's it! Well, nearly. You can actually run the demo script immediately:</p>
+
+<pre>cd octave-fractals
+octave fractaldemo.m</pre>
+
+    <p>This will produce all the images introduced on my weblog.</p>
+
+    <p>If you want to include the <code>mandelbrot</code> or <code>julia</code>
+    functions in your own octave code, add the following to your <code>
+    <code>.octaverc</code> file (or create one in your home directory if you
+    don't have one):</p>
+
+    <pre>addpath("~/octave-fractals")</pre>
 
     <h2>License</h2>
-    <p>Copyright 2008--2010 Bruno Girin</p>
+    <p>Copyright 2008&#8211;2010 Bruno Girin</p>
     <p>This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by the
     Free Software Foundation, either version 3 of the License, or any later
@@ -55,12 +91,6 @@
     or FITNESS FOR A PARTICULAR PURPOSE.  See the
     <a href="http://www.gnu.org/licenses/">GNU General Public License</a>
     for more details.</p>
-
-    <h2>Authors</h2>
-    <p>Bruno Girin</p>
-
-    <h2>Contact</h2>
-    <p>Bruno Girin</p>
 
     <h2>Download</h2>
     <p>
@@ -72,6 +102,25 @@
       by running:
     </p>
       <pre>$ git clone git://github.com/brunogirin/octave-fractals</pre>
+
+    <h2>References</h2>
+    <p>None of this was created in a vaccum. I used a number of offline and
+    online references so if you are interested in the subject of fractals, you
+    could do a lot worse than checking them out:</p>
+    <ul>
+    <li><a href="http://eu.wiley.com//legacy/wileychi/fractal/">Fractal Geometry,
+    Mathematical Foundations and Applications, 2nd Edition</a> by Kenneth Falconer;</li>
+    <li><a href="http://fsmsh.com/2108">Generating Cool Fractals</a>,
+    by <a href="http://www.freesoftwaremagazine.com/user/42">Xavier Calbet</a>,
+    in <a href="http://www.freesoftwaremagazine.com/">Free Software Magazine</a>;</li>
+    <li>The Wikipedia articles on <a href="http://en.wikipedia.org/wiki/Fractals">Fractals</a>
+    and <a href="http://en.wikipedia.org/wiki/Burning_Ship_fractal">The Burning Ship</a>;</li>
+    <li>Last but not least, the excellent
+    <a href="http://local.wasp.uwa.edu.au/~pbourke/fractals/">articles</a>
+    and <a href="http://local.wasp.uwa.edu.au/~pbourke/fractals/juliaset/">multiple</a>
+    <a href="http://local.wasp.uwa.edu.au/~pbourke/fractals/cactus/">examples</a>
+    by <a href="http://local.wasp.uwa.edu.au/~pbourke/">Paul Bourke</a>.</li>
+    </ul>
 
     <div class="footer">
       Get the source code on GitHub : <a href="http://github.com/brunogirin/octave-fractals">brunogirin/octave-fractals</a>
